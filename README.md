@@ -9,10 +9,10 @@ Add [Viz](http://viz-js.com/) in [Redmine](http://www.redmine.org/)
 You can add your graphivz code in wiki or issue by editor
 
 ```
-my text with my code
-``` graphviz
-a -> b;
-```
+    my text with my code
+    ``` graphviz
+    a -> b;
+    ```
 ```
 
 ## Installation
