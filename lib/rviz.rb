@@ -2,7 +2,8 @@ module Rviz
   module Hooks
     class ViewLayoutsBaseHtmlHeadHook < Redmine::Hook::ViewListener
       def view_layouts_base_html_head(context={})
-        return javascript_include_tag('rviz.js', :plugin => 'rviz')
+        return javascript_include_tag('rviz.js', :plugin => 'rviz') +
+          stylesheet_link_tag('rviz.css', :plugin => 'rviz')  
       end
     end
   end
@@ -139,7 +140,7 @@ end
 
 
 ############### FOR TEXTILE ##################################################
-require File.expand_path('../redcloth3', __FILE__)
+require File.expand_path('../../../../lib/redmine/wiki_formatting/textile/redcloth3', __FILE__)
 require 'digest/md5'
 
 module Redmine
