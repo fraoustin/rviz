@@ -33,7 +33,7 @@ Redmine::Plugin.register :rviz do
   name 'Redmine Viz'
   author 'Frederic Aoustin'
   description 'The RViz add viz.js in Redmine.'
-  version '0.1.0'
+  version '0.1.1'
   url 'https://github.com/fraoustin/rviz'
   author_url 'https://github.com/fraoustin'
   requires_redmine :version_or_higher => '2.3.0'
