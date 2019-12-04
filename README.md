@@ -10,10 +10,30 @@ You can add your graphivz code in wiki or issue by editor
 
 ```
     my text with my code
-    ``` graphviz
+    {{graphviz
     a -> b;
-    ```
+    b -> c;
+    c -> d;
+    d -> a;
+    }}
+    {{graphviz(circo)
+    a -> b;
+    b -> c;
+    c -> d;
+    d -> a;
+    }}
 ```
+
+You can use as engine
+
+- dot (default)
+- circo
+- fdp
+- neato
+- osage
+- twopi
+
+(you can try on http://viz-js.com/)
 
 ## Installation
 ```
